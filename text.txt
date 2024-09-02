@@ -13,8 +13,14 @@ fonts weight
 
 
 npm create vite@latest ./ -- --template react-ts
+npm create vite@latest client -- --template react-ts
 
 ///////////////
 npm install
 ''''''''''''''''''''/
 npm run dev
+///////////////////
+git checkout master
+.................
+git checkout -b dev //create dev branch
+git push origin dev
