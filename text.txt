@@ -10,8 +10,6 @@ fonts weight
 900: Black (Ultra Bold)
 
 
-
-
 npm create vite@latest ./ -- --template react-ts
 
 ///////////////
@@ -21,5 +19,22 @@ npm run dev
 .............
 git checkout master
 //Убедитесь, что вы находитесь на ветке master перед созданием новых веток.
+............................
+# Создание ветки dev из master
+git checkout master
+git checkout -b dev
+git push origin dev
 ......................
+git checkout dev
+//Для начала работы над новой функцией или исправлением, переключитесь на ветку dev:
+........................
+# Переключитесь на ветку test
+git checkout test
 
+# Объедините изменения из dev в test
+git merge dev
+.................
+//Обновление удаленных веток: Не забудьте отправить изменения в удаленные ветки после мёржа:
+git push origin dev
+git push origin test
+git push origin master
