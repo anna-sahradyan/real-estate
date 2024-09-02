@@ -1,12 +1,11 @@
 import React from 'react';
 
-const App: React.FC = () => {
+const Header:React.FC = () => {
     return (
         <div>
-
-
+header
         </div>
     );
 };
 
-export default App;
+export default Header

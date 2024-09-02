@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'Montserrat';
     font-weight: 300;
@@ -7,6 +6,7 @@
     url('/src/assets/fonts/Montserrat-Thin.ttf') format('truetype');
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Montserrat';
     font-weight: 400;
@@ -15,6 +15,7 @@
     url('/src/assets/fonts/Montserrat-Regular.ttf') format('truetype');
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Montserrat';
     font-weight: 500;
@@ -23,6 +24,7 @@
     url('/src/assets/fonts/Montserrat-Medium.ttf') format('truetype');
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Montserrat';
     font-weight: 900;
@@ -30,4 +32,85 @@
     url('/src/assets/fonts/Montserrat-Black.woff') format('woff'),
     url('/src/assets/fonts/Montserrat-Black.ttf') format('truetype');
     font-display: swap;
+}
+
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+
+}
+html, body {
+    height: 100vh;
+}
+button {
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+    color: inherit;
+    font: inherit;
+    outline: none;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'Montserrat', sans-serif;
+}
+#root{
+    --bs-bg-color: #313130;
+    --bg-header: #EDEDED;
+    --bs--white:#FAFAFA;
+    --bs--brown:#313130;
+}
+body {
+    box-sizing: inherit;
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    background: #1C1E1E;
+    overflow-x: auto;
+    letter-spacing: 0;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: var(--bs--white);
+}
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.main {
+    flex:1;
+}
+
+.footer {
+margin-top: auto;
+}
+
+@media (min-width: 375px) {
+    .container {
+        padding: 15px;
+    }
+}
+
+
+@media (min-width: 744px) and (max-width: 1440px) {
+
+}
+
+
+@media (min-width: 1440px) {
+
 }
