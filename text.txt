@@ -18,3 +18,8 @@ npm create vite@latest ./ -- --template react-ts
 npm install
 ''''''''''''''''''''/
 npm run dev
+.............
+git checkout master
+//Убедитесь, что вы находитесь на ветке master перед созданием новых веток.
+......................
+
